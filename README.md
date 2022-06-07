@@ -8,7 +8,7 @@ The offline module makes recommendations based upon statistical analysis of movi
 I used Spark-SQL for the movie statistics, and the Alternate Least Squares (ALS) of Spark-ML for training the LFM.
 The output of the LFM contains the feature matrix for all the movies. I computed the cosine-similarity for every pair of feature vectors in the feature matrix.
 
-The online module makes recommendations as soon as the user provides the rating for a particular movie through interacting with the website (website source code not included here).
+The online module makes recommendations as soon as the user provides the rating for a particular movie through interacting with the website (website source code not included here, similar to https://movielens.org/).
 The recommendations are based upon the most recent ratings of the user and the cosine-similarities between the movies computed and stored in the offline module. 
 This method is called "Item-CF". I used Spark-Streaming to implement this module.
 
