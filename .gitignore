@@ -1,0 +1,6 @@
+# Project exclude paths
+/recommender/ContentRecommender/target/
+/recommender/DataLoader/target/
+/recommender/OfflineRecommender/target/
+/recommender/StatisticsRecommender/target/
+/recommender/StreamingRecommender/target/
